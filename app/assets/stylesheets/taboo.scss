@@ -1,0 +1,29 @@
+
+.page-a4 {
+  width: 800px;
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 180px;
+  font-weight: bold;
+  font: 20px sans-serif;
+  text-align: center;
+}
+
+.title_word {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.taboo_word {
+  padding-bottom: 5px;
+}

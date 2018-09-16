@@ -1,0 +1,8 @@
+.page-a4
+  - @cards.each do |card|
+    .card
+      .title_word
+        = card.first
+      - card[1..-1].each do |taboo_word|
+        .taboo_word
+          = taboo_word.slice(0,1).capitalize + taboo_word.slice(1..-1)
