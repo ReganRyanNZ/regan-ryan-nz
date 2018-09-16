@@ -1,5 +1,3 @@
-require "CSV"
-
 class PagesController < ApplicationController
 
   def index
