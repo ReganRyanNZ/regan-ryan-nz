@@ -41,6 +41,12 @@
   background-color: white;
   font-size: 32px;
 
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
   &_word-container {
 
   }
@@ -60,6 +66,6 @@
   position: fixed;
   right: 5px;
   bottom: 5px;
-  z-index: 1000000;
+  z-index: 10000000;
   font-size: 9pt;
 }
