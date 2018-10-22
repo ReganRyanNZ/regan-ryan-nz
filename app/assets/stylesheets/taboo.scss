@@ -39,6 +39,7 @@
   justify-content: center;
 
   background-color: white;
+  font-size: 32px;
 
   &_word-container {
 
@@ -47,7 +48,8 @@
   &_main-word {
     font-weight: bold;
     border-bottom: 1px solid black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   &_forbidden-word {
     margin-bottom: 2px;
