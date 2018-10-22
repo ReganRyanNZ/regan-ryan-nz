@@ -1,5 +1,5 @@
 - @cards.shuffle.each.with_index do |card, i|
-  .taboo_game-card id=i style="z-index: #{i}" onClick="moveCardToBack(#{@cards.count})"
+  .taboo_game-card id="#{i + 1_000_000}" style="z-index: #{i + 1_000_000}" onClick="moveCardToBack(#{@cards.count})"
     .taboo_game-card_word-container
       .taboo_game-card_main-word
         = card[0]
