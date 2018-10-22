@@ -27,3 +27,37 @@
 .taboo_word {
   padding-bottom: 5px;
 }
+
+.taboo_game-card {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+
+  &_word-container {
+
+  }
+
+  &_main-word {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+  &_forbidden-word {
+    margin-bottom: 2px;
+  }
+}
+
+.print-tag {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1000000;
+  font-size: 9pt;
+}

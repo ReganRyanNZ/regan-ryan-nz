@@ -1,0 +1,17 @@
+- @cards.shuffle.each.with_index do |card, i|
+  .taboo_game-card id=i style="z-index: #{i}" onClick="moveCardToBack(#{@cards.count})"
+    .taboo_game-card_word-container
+      .taboo_game-card_main-word
+        = card[0]
+      - card[1..-1].each do |word|
+        .taboo_game-card_forbidden-word
+          = word
+.print-tag
+  = link_to 'Print deck', :taboo_print
+
+javascript:
+  var moveCardToBack = function(cardCount) {
+    target = event.target.closest('.taboo_game-card');
+    target.id = target.id - cardCount;
+    target.style.zIndex = target.id;
+  }
