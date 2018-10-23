@@ -8,7 +8,10 @@ class PagesController < ApplicationController
   end
 
   def taboo
-    @cards = get_taboo_csv.to_a
+    @cards = get_taboo_csv.to_a.shuffle
+    if params.include?(:marianna) || params.include?(:faith)
+      @cards += [['Gilead', 'Lebanon', 'City', 'Song', 'Joy', 'Old Testament']]
+    end
   end
 
   private
