@@ -36,3 +36,10 @@ p, h1 {
   flex-direction: column;
   text-align: center;
 }
+
+.bottom-comment {
+  font-size: 80%;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
