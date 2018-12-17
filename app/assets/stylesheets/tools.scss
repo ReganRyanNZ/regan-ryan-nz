@@ -1,0 +1,14 @@
+$large-breakpoint: 1025px;
+$mobile-breakpoint: 640px;
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $large-breakpoint) {
+    @content;
+  }
+}
