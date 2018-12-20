@@ -1,0 +1,15 @@
+.blog
+  .content
+    = link_to "Regan's Adventures", blog_index_path, class: "h1"
+    p Hello 👋
+
+    p These are my adventures:
+    ul
+      li
+        .toc
+          = link_to "Chapter 1", blog_path("01")
+          .place Brisbane
+          .date Dec 17, 2018
+    hr
+    .quote
+      | If I take the wings of the dawn, and settle at the limits of the sea—There also Your hand will lead me, and Your right hand will take hold of me.

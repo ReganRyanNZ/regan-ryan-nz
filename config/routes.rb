@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'taboo/print' => 'pages#taboo_print'
   get 'taboo' => 'pages#taboo'
-  get 'blog/:id' => 'blog#show'
+  resources :blog, only: [:show, :index]
 end

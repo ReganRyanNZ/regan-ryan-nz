@@ -6,9 +6,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  p, body, h1, h2, h3, h4, h5, h6 {
+  p, body, div, li, h1, .h1, h2, h3, h4, h5, h6 {
     color: #101010;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-rendering: optimizeLegibility;
+    line-height: 1.7;
   }
   .content {
     padding-left: 15px;
@@ -17,15 +19,45 @@
       max-width: 58%;
     }
 
-    h1 {
+    h1, .h1 {
       margin-top: 0px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      display: block;
+      font-size: 2em;
+      font-weight: bold;
+      text-decoration: none;
     }
-    p {
-      font-size: 16.8px;
-      line-height: 1.7;
+    p, li {
+      font-size: 1.2rem;
       margin-bottom: 1rem;
-      text-rendering: optimizeLegibility;
+    }
+    p + .quote {
+      margin-top: 2rem;
+    }
+    .quote {
+      font-size: 1.6rem;
+      font-weight: 300;
+      font-style: italic;
+      color: #777;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    hr {
+      margin-block-start: 3rem;
+      margin-block-end: 3rem;
+      color: #777;
+    }
+
+    .toc {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      .date, .place {
+        color: #777;
+        font-size: 1.1rem;
+      }
     }
   }
 }
