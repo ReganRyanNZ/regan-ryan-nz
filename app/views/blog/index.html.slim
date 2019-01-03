@@ -4,12 +4,17 @@
     p Hello 👋
 
     p These are my adventures:
-    ul
-      li
-        .toc
+    table.toc
+      tr
+        td
           = link_to "Chapter 1", blog_path("01")
-          .place Brisbane
-          .date Dec 17, 2018
+        td Brisbane
+        td Dec 17, 2018
+      tr
+        td
+          = link_to "Chapter 2", blog_path("02")
+        td California
+        td Jan 2, 2019
     hr
     .quote
       | If I take the wings of the dawn, and settle at the limits of the sea—There also Your hand will lead me, and Your right hand will take hold of me.
