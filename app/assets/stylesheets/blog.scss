@@ -36,10 +36,13 @@
     margin-right: 10px;
     display: inline-block;
     width: 250px;
+    vertical-align: top;
   }
   .caption {
     font-style: italic;
     text-align: center;
+    line-height: 1.1;
+    padding-top: 8px;
   }
   .images {
     margin-top: 3rem;
@@ -73,6 +76,11 @@
     color: #777;
     margin-left: 2rem;
     margin-bottom: 2rem;
+
+    .author {
+      color: inherit;
+      text-align: right;
+    }
   }
 
   hr {
@@ -81,10 +89,20 @@
     color: #777;
   }
 
+  td + td + td {
+    text-align: right;
+  }
+
+  td {
+    width: 33%;
+  }
+
   .toc {
     color: #777;
     font-size: 1.1rem;
     width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
   }
 }
 
