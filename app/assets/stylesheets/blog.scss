@@ -85,7 +85,11 @@
       text-align: right;
     }
   }
-
+  .italic {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+  }
   hr {
     margin-block-start: 3rem;
     margin-block-end: 3rem;
