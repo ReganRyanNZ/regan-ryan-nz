@@ -46,6 +46,7 @@
     text-align: center;
     line-height: 1.1;
     padding-top: 8px;
+    white-space: break-spaces;
   }
   .images {
     margin-top: 3rem;
@@ -71,6 +72,7 @@
     font-size: 1.2rem;
     margin-bottom: 1rem;
     margin-block-start: 0;
+    white-space: break-spaces;
   }
   p + .quote {
     margin-top: 2rem;

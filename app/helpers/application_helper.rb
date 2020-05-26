@@ -1,32 +1,14 @@
 module ApplicationHelper
 
-  def blog_image_tag ref, title: "", size: 'square'
-    case size
-    when 'square'
-      html = <<~HTML
-      <div class='img'>
+  def blog_image_tag ref, title: '', size: nil
+    img_class = ['img', size].compact.join('-')
+    html = <<~HTML
+      <div class='#{img_class}'>
         #{image_tag(ref, alt: title)}
         <div class='caption'>#{title}</div>
       </div>
-      HTML
-      html.html_safe
-    when 'hero'
-      html = <<~HTML
-      <div class='img-hero'>
-        #{image_tag(ref, alt: title)}
-        <div class='caption'>#{title}</div>
-      </div>
-      HTML
-      html.html_safe
-    when 'full'
-      html = <<~HTML
-      <div class='img-full'>
-        #{image_tag(ref, alt: title)}
-        <div class='caption'>#{title}</div>
-      </div>
-      HTML
-      html.html_safe
-    end
+    HTML
+    html.html_safe
   end
 
   def blog_index url_id, title: "", location: "", date: ""
